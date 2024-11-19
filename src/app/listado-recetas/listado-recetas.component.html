@@ -1,0 +1,6 @@
+<h1>Listado de recetas</h1>
+<ul class="list-group">
+    @for (receta of recetas; track $index) {
+        <li class="list-group-item">{{receta.nombre}} {{receta.ingredientes}} {{receta.urlFoto}} {{receta.pasosReceta}} </li>
+    }
+</ul>
